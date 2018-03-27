@@ -1,0 +1,2 @@
+# EASJ-londero
+Udfordringen for firmaet ligger i deres online platform.  Deres hjemmeside www.londeromosaik.dk er ikke blevet opdateret i omkring 10 år. Det der er vigtigt for firmaet er, at fremvise cases, der er udført, da det oftest er arkitekter og entreprenører, der kigger på sitet. Sitet skal have et mere stilrent og inspirerende udseende. Vi skal hjælpe dem med en total Web Renovation, så deres website afspejler kvaliteten i håndværket. 
