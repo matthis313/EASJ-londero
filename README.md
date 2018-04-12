@@ -8,3 +8,6 @@ Projektet lægger op til et totalt redesign. Dette er ensbetydende med, at vi fa
 - Hvordan formulerer vi strukturen i forhold til målgruppens behov?
 - Hvordan kan vi gøre det sådan, at Londero selv, i fremtiden, kan intuitivt, bruge deres fremtidige platform?
 - Hvordan optimerer vi firmaets profil udadtil?
+
+
+Houston we have a problem
