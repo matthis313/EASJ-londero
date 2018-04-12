@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    VELKOMMEN TIOL MIN KONTAKTSIDE
+                    VELKOMMEN TIL MIN KONTAKTSIDE
                 </div>
 
                 <div class="links">
