@@ -22,3 +22,5 @@ Route::get('/contact', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/linus', 'LinusController@index')->name('linus');
