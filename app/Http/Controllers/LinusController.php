@@ -23,6 +23,6 @@ class LinusController extends Controller
      */
     public function index()
     {
-        return view('linus');
+        return view('linus.linus');
     }
 }
