@@ -13,7 +13,7 @@ class VarneyController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+ 
     }
 
     /**
@@ -23,6 +23,6 @@ class VarneyController extends Controller
      */
     public function index()
     {
-        return view('varney');
+        return view('varney.varney');
     }
 }
