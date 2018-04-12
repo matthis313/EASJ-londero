@@ -10,3 +10,4 @@ Projektet lægger op til et totalt redesign. Dette er ensbetydende med, at vi fa
 - Hvordan optimerer vi firmaets profil udadtil?
 
 Varney har været her
+Trolden har været her!
