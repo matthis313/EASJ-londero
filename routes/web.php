@@ -15,6 +15,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/cases', function () {
+    return view('cases.index');
+});
+
+Route::get('/skills', function () {
+    return view('skills.index');
+});
+
+Route::get('/products', function () {
+    return view('products.index');
+});
+
+Route::get('team', function () {
+    return view('team');
+});
+
 Route::get('/contact', function () {
     return view('contact.index');
 });
