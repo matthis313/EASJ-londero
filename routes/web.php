@@ -23,6 +23,3 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/linus', 'LinusController@index')->name('linus');
-
-Route::get('/varney', 'VarneyController@index')->name('varney');
