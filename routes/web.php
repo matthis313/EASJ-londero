@@ -11,31 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'PagesController@index')->name('index');
 
-Route::get('/cases', function () {
-    return view('cases.index');
-});
+Route::get('/contact', 'PagesController@contact')->name('contact');
 
-Route::get('/skills', function () {
-    return view('skills.index');
-});
+Route::get('/team', 'PagesController@team')->name('team');
 
-Route::get('/products', function () {
-    return view('products.index');
-});
 
-Route::get('team', function () {
-    return view('team');
-});
+Route::get('/cases', 'CasesController@index');
 
-Route::get('/contact', function () {
-    return view('contact.index');
-});
+Route::get('/products', 'ProductsController@index');
 
-Auth::routes();
+Route::get('/skills', 'SkillsController@index');
 
-Route::get('/home', 'HomeController@index')->name('home');
 
