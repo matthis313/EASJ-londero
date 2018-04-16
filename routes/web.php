@@ -23,5 +23,3 @@ Route::get('/cases', 'CasesController@index');
 Route::get('/products', 'ProductsController@index');
 
 Route::get('/skills', 'SkillsController@index');
-
-
