@@ -11,6 +11,11 @@ Det kan være I skal tage det endnu mere roligt og bruge git fetch (henter ændr
 (det kan så være en god ide at lade VS Code foretage automatisk git fetch som den foreslår ;))
 
 ## PHP
+
+## Navngivning af Modeller og Controllere
+Modeller (som User.php) navngives i singularis, altså som var det EN bruger.
+Det samme gør man ofte også med controllere så i jeres tilfælde ville det være ProductController, PageController og SkillsController.
+
 ## Eksempel opslag i database
 Fx opslag på alle produkter i ProductsController->index() (forudsætter at I har en Products model ligesom \app\User.php) - og at tabellen er oprettet naturligvis.
 
@@ -68,7 +73,30 @@ class ProductsController extends Controller
 
 
 ## iTERM
+Det vil også virke i andet end iTERM - men giver noget mere farvespræl så man kan se hvad der sker.
+Jeg skal nok finde noget til selve iTERM så I får lidt mere sigende farver på.
 
+´´´
+Get happy Git colors. Paste the following into your ~/.gitconfig file:
+
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+´´´
 
 ## Commandline stuff
 
