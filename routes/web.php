@@ -24,4 +24,5 @@ Route::get('/products', 'ProductsController@index');
 
 Route::get('/skills', 'SkillsController@index');
 
+Route::resource('profile', 'ProfileController');
 
