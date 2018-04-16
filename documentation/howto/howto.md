@@ -76,7 +76,7 @@ class ProductsController extends Controller
 Det vil også virke i andet end iTERM - men giver noget mere farvespræl så man kan se hvad der sker.
 Jeg skal nok finde noget til selve iTERM så I får lidt mere sigende farver på.
 
-´´´
+```
 Get happy Git colors. Paste the following into your ~/.gitconfig file:
 
 [color]
@@ -96,7 +96,7 @@ Get happy Git colors. Paste the following into your ~/.gitconfig file:
 	added = yellow
 	changed = green
 	untracked = cyan
-´´´
+```
 
 ## Commandline stuff
 
