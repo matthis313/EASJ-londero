@@ -23,9 +23,6 @@ Route::get('/cases', 'CasesController@index');
 Route::get('/products', 'ProductsController@index');
 
 Route::get('/skills', 'SkillsController@index');
-<<<<<<< HEAD
-=======
 
 Route::resource('profile', 'ProfileController');
 
->>>>>>> 8d39d239b6568a95147fc38e2234e1b7a8bf2b67
