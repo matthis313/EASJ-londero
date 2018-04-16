@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- NOINDEX = DO NOT INDEX THIS PAGE ON THE WEB, NOFOLLOW = DO NOT FOLLOW LINKS ON THIS PAGE -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- DESCRIPTION OF WHAT IS ON THE PAGE -->
+    <meta name="description" content="the online portfolio and catalog of Londero Mosaic">
+
+    <!-- SETS THE INITIAL ZOOM LEVEL, WHEN THE BROWSER IS LOADED -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Sets the logo img for the tab bar in the browser -->
+    <link rel="icon" type="image/png" href="img/logo.png">
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -88,6 +100,11 @@
         <main class="py-4">
             @yield('content')
         </main>
+
+        <div class="footer container">
+            <p>Copyright ©2018 All Rights Reserved. Londero Mosaik</p>
+        </div>
+
     </div>
 </body>
 </html>
