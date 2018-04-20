@@ -26,6 +26,7 @@ description = "Default layout"
 		<!-- Styles -->
 		<link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
 		<link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
+		<link href="{{ 'assets/vendor/bootstrap/dist/css/bootstrap.min.css'|theme }}" rel="stylesheet">
 		{% styles %}
 	</head>
 	<body>
@@ -34,6 +35,11 @@ description = "Default layout"
 		<header id="layout-header">
 			{% partial 'site/header' %}
 		</header>
+
+		<!-- Nav -->
+		<nav id="layout-nav">
+			{% partial 'site/nav' %}
+		</nav>
 
 		<!-- Content -->
 		<section id="layout-content">
