@@ -1,0 +1,26 @@
+{
+    "name": "october/londero-theme",
+    "type": "october-theme",
+    "description": "Londero theme",
+    "keywords": ["october", "cms", "londero", "theme"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Linus Kinzi-Paludan",
+            "role": "Co-founder"
+        },
+        {
+            "name": "Mathias E. Varney",
+            "role": "Co-founder"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

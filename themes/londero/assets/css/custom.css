@@ -1,7 +1,156 @@
+.header_bg {
+    background-color: red;
+}
+
 body {
+    padding-top: 0;
+    margin-top: 0;
     font-size:1.5rem;
+    margin: 0;
 }
 
 h1 {
     font-size: 4rem;
+}
+
+.col-bg {
+    background-color: dimgray;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    margin-top: 2em;
+}
+
+
+
+
+
+
+body{margin-top:20px;}
+.widget-container {
+    -webkit-border-radius: 2px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 2px;
+    -moz-background-clip: padding;
+    border-radius: 2px;
+    background-clip: padding-box;
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .07);
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .07);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .07);
+    margin-bottom: 30px
+}
+
+.widget-container .widget {
+    margin-bottom: 0
+}
+
+.widget-container>.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important
+}
+
+.widget-container>.row>[class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important
+}
+
+.widget {
+    -webkit-border-radius: 2px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 2px;
+    -moz-background-clip: padding;
+    border-radius: 2px;
+    background-clip: padding-box;
+    background-color: #fff;
+    font-weight: 300;
+    margin-bottom: 30px;
+    position: relative;
+    vertical-align: middle
+}
+
+.widget .row {
+    font-size: 0;
+    margin-left: 0;
+    margin-right: 0
+}
+
+.widget .row:before {
+    display: none
+}
+
+.widget .row .col {
+    font-size: 11px
+}
+
+.widget .row .col:first-child {
+    -webkit-border-radius: 2px 0 0 2px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 2px 0 0 2px;
+    -moz-background-clip: padding;
+    border-radius: 2px 0 0 2px;
+    background-clip: padding-box
+}
+
+.widget .row .col:last-child {
+    -webkit-border-radius: 0 2px 2px 0;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 0 2px 2px 0;
+    -moz-background-clip: padding;
+    border-radius: 0 2px 2px 0;
+    background-clip: padding-box
+}
+
+.widget .col {
+    display: inline-block;
+    vertical-align: top
+}
+
+.widget [class*=col-] {
+    font-size: 11px;
+    margin: 0;
+    padding: 0
+}
+
+.image-tile {
+    border: 1px solid #fff
+}
+
+.image-tile .tile {
+    border: 1px solid #fff;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: bottom
+}
+
+.image-tile .tile:hover {
+    cursor: pointer
+}
+
+.image-tile .tile:hover>p {
+    background-color: rgba(3, 3, 3, .5);
+    color: #fff
+}
+
+.image-tile .tile>p {
+    background-color: rgba(3, 3, 3, 0);
+    color: rgba(6, 6, 6, 0);
+    font-size: 13px;
+    font-weight: 300;
+    height: 100%;
+    padding-top: 50px;
+    width: 100%
+}
+
+.image-tile .tile.more-images {
+    background-color: #29c7ca;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300
+}
+
+.image-tile .tile.more-images .images-number {
+    font-size: 25px;
+    margin-top: 20px
 }
