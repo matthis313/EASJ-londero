@@ -57,8 +57,19 @@ description = "Default layout"
 		<script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
 		<script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
 		<script src="{{ 'assets/javascript/app.js'|theme }}"></script>
+		<script src="{{ 'assets/javascript/collage.js'|theme }}"></script>
 		{% framework extras %}
 		{% scripts %}
+		<!--  START GOOGLE ANALYTICS -->
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
+			ga('create', 'UA-90554538-1', 'auto');
+			ga('send', 'pageview');
+		</script>
+		<!-- END GOOGLE ANALYTICS -->
 	</body>
 </html>

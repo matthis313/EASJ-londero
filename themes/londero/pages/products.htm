@@ -4,17 +4,50 @@ layout = "default"
 ==
 
 <div class="container">
-    <div class="row">
+    <div class="row gallery-images">
         <div class="col-md-4">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, blanditiis! Cupiditate delectus veniam dolore unde maxime quod fugit voluptates ullam possimus corrupti iure ut, alias eligendi, qui aliquam non deserunt. Dolores accusantium quas incidunt nam aspernatur praesentium quaerat fugiat quo eaque iure ut fugit magni illo voluptas aperiam sint commodi non corporis error, laudantium asperiores harum? Esse eum quos earum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, blanditiis! Cupiditate delectus veniam dolore unde maxime quod fugit voluptates ullam possimus corrupti iure ut, alias eligendi, qui aliquam non deserunt. Dolores accusantium quas incidunt nam aspernatur praesentium quaerat fugiat quo eaque iure ut fugit magni illo voluptas aperiam sint commodi non corporis error, laudantium asperiores harum? Esse eum quos earum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, blanditiis! Cupiditate delectus veniam dolore unde maxime quod fugit voluptates ullam possimus corrupti iure ut, alias eligendi, qui aliquam non deserunt. Dolores accusantium quas incidunt nam aspernatur praesentium quaerat fugiat quo eaque iure ut fugit magni illo voluptas aperiam sint commodi non corporis error, laudantium asperiores harum? Esse eum quos earum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, blanditiis! Cupiditate delectus veniam dolore unde maxime quod fugit voluptates ullam possimus corrupti iure ut, alias eligendi, qui aliquam non deserunt. Dolores accusantium quas incidunt nam aspernatur praesentium quaerat fugiat quo eaque iure ut fugit magni illo voluptas aperiam sint commodi non corporis error, laudantium asperiores harum? Esse eum quos earum?</p>
+            <div id="myBtnContainer">
+                <button class="btn active" onclick="filterSelection('all')"> Alle</button>
+                <button class="btn" onclick="filterSelection('nature')"> Natursten</button>
+                <button class="btn" onclick="filterSelection('beton')"> Beton</button>
+                <button class="btn" onclick="filterSelection('mosaic')"> Mosaik</button>
+            </div>
         </div>
-        <div class="col-md-8">
+
+        <div class="col-md-8 filter_pic">
             <img src="{{ 'assets/images/500x500.png'|theme }}" style="width:100%; height:25%;">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, blanditiis! Cupiditate delectus veniam dolore unde maxime quod fugit voluptates ullam possimus corrupti iure ut, alias eligendi, qui aliquam non deserunt. Dolores accusantium quas incidunt nam aspernatur praesentium quaerat fugiat quo eaque iure ut fugit magni illo voluptas aperiam sint commodi non corporis error, laudantium asperiores harum? Esse eum quos earum?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, blanditiis! Cupiditate delectus veniam dolore unde maxime quod fugit voluptates ullam possimus corrupti iure ut, alias eligendi, qui aliquam non deserunt. Dolores accusantium quas incidunt nam aspernatur praesentium quaerat fugiat quo eaque iure ut fugit magni illo voluptas aperiam sint commodi non corporis error, laudantium asperiores harum? Esse eum quos earum?</p>
+            <br />
+            <div class="col-sm-4 gallery-img-holder" filter-category="nature">
+                <img src="{{ 'assets/images/500x500.png'|theme }}" class="img-rounded thumbnail">
+            </div>
+    
+            <div class="col-sm-4 gallery-img-holder" filter-category="nature">
+                <img src="{{ 'assets/images/500x500.png'|theme }}" class="img-rounded thumbnail">
+            </div>
+    
+            <div class="col-sm-4 gallery-img-holder" filter-category="beton">
+                <img src="{{ 'assets/images/500x500.png'|theme }}" class="img-rounded thumbnail">
+            </div>
+    
+            <div class="col-sm-4 gallery-img-holder" filter-category="mosaic">
+                <img src="{{ 'assets/images/500x500.png'|theme }}" class="img-rounded thumbnail">
+            </div>
+    
+            <div class="col-sm-4 gallery-img-holder" filter-category="nature">
+                <img src="{{ 'assets/images/500x500.png'|theme }}" class="img-rounded thumbnail">
+            </div>
+    
+            <div class="col-sm-4 gallery-img-holder" filter-category="beton">
+                <img src="{{ 'assets/images/500x500.png'|theme }}" class="img-rounded thumbnail">
+            </div>
+    
+            <div class="col-sm-4 gallery-img-holder" filter-category="mosaic">
+                <img src="{{ 'assets/images/500x500.png'|theme }}" class="img-rounded thumbnail">
+            </div>
+    
+            <div class="col-sm-4 gallery-img-holder" filter-category="mosaic">
+                <img src="{{ 'assets/images/500x500.png'|theme }}" class="img-rounded thumbnail">
+            </div>
         </div>
     </div>
 </div>
