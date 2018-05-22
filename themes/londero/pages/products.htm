@@ -4,50 +4,120 @@ layout = "default"
 ==
 
 <div class="container">
-    <div class="row gallery-images">
-        <div class="col-md-4">
-            <div id="myBtnContainer">
-                <button class="btn active" onclick="filterSelection('all')"> Alle</button>
-                <button class="btn" onclick="filterSelection('nature')"> Natursten</button>
-                <button class="btn" onclick="filterSelection('beton')"> Beton</button>
-                <button class="btn" onclick="filterSelection('mosaic')"> Mosaik</button>
-            </div>
-        </div>
+	<div class="row">
+		<div class="col-md-4">
+			<button class="btn active" id="all"> Alle</button>
+			<button class="btn" id="nature"> Natursten</button>
+			<button class="btn" id="beton"> Beton</button>
+			<button class="btn" id="mosaic"> Mosaik</button>
+		</div>
 
-        <div class="col-md-8 filter_pic">
-            <img src="{{ 'assets/images/500x500.png'|theme }}" style="width:100%; height:25%;">
-            <br />
-            <div class="col-sm-4 gallery-img-holder" filter-category="nature">
-                <img src="{{ 'assets/images/500x500.png'|theme }}" class="img-rounded thumbnail">
-            </div>
-    
-            <div class="col-sm-4 gallery-img-holder" filter-category="nature">
-                <img src="{{ 'assets/images/500x500.png'|theme }}" class="img-rounded thumbnail">
-            </div>
-    
-            <div class="col-sm-4 gallery-img-holder" filter-category="beton">
-                <img src="{{ 'assets/images/500x500.png'|theme }}" class="img-rounded thumbnail">
-            </div>
-    
-            <div class="col-sm-4 gallery-img-holder" filter-category="mosaic">
-                <img src="{{ 'assets/images/500x500.png'|theme }}" class="img-rounded thumbnail">
-            </div>
-    
-            <div class="col-sm-4 gallery-img-holder" filter-category="nature">
-                <img src="{{ 'assets/images/500x500.png'|theme }}" class="img-rounded thumbnail">
-            </div>
-    
-            <div class="col-sm-4 gallery-img-holder" filter-category="beton">
-                <img src="{{ 'assets/images/500x500.png'|theme }}" class="img-rounded thumbnail">
-            </div>
-    
-            <div class="col-sm-4 gallery-img-holder" filter-category="mosaic">
-                <img src="{{ 'assets/images/500x500.png'|theme }}" class="img-rounded thumbnail">
-            </div>
-    
-            <div class="col-sm-4 gallery-img-holder" filter-category="mosaic">
-                <img src="{{ 'assets/images/500x500.png'|theme }}" class="img-rounded thumbnail">
-            </div>
-        </div>
-    </div>
+		<main class="col-md-8">
+			<img class="prod_pic" src="{{ 'assets/images/500x500.png'|theme }}">
+			<section>
+				<img src="{{ 'assets/images/500x500.png'|theme }}" id="01" class="img img-rounded nature">
+	
+				<img src="{{ 'assets/images/500x500.png'|theme }}" id="02" class="img img-rounded nature">
+	
+				<img src="{{ 'assets/images/500x500.png'|theme }}" id="03" class="img img-rounded beton">
+	
+				<img src="{{ 'assets/images/500x500.png'|theme }}" id="04" class="img img-rounded mosaic">
+	
+				<img src="{{ 'assets/images/500x500.png'|theme }}" id="05" class="img img-rounded beton">
+	
+				<img src="{{ 'assets/images/500x500.png'|theme }}" id="06" class="img img-rounded mosaic">
+	
+				<img src="{{ 'assets/images/500x500.png'|theme }}" id="07" class="img img-rounded mosaic">
+	
+				<img src="{{ 'assets/images/500x500.png'|theme }}" id="08" class="img img-rounded nature">
+			</section>
+
+			<section class="modal01">
+				<section id="content">
+					<h3>Nature</h3>
+					<span id="close01" class="close">&times;</span>
+					<img class="modalimg" id="slim" src="{{ 'assets/images/500x500.png'|theme }}" />
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis commodi corporis, amet nobis laudantium iure architecto laboriosam neque, sequi numquam vel veniam facilis itaque? Sed repudiandae enim vitae in beatae.</p>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem repellendus quos maxime architecto aliquid quibusdam repellat tempora commodi nihil esse dicta enim aspernatur culpa odio, nulla, dolorem neque ipsum optio!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi inventore mollitia nesciunt aut atque ratione distinctio, laborum nihil provident laboriosam voluptatem, in nemo quibusdam quas ut voluptates dolores ad ducimus!</p>
+				</section>
+			</section>
+
+			<section class="modal02">
+				<section id="content">
+					<h3>Nature</h3>
+					<span id="close02" class="close">&times;</span>
+					<img class="modalimg" id="slim" src="{{ 'assets/images/500x500.png'|theme }}" />
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis commodi corporis, amet nobis laudantium iure architecto laboriosam neque, sequi numquam vel veniam facilis itaque? Sed repudiandae enim vitae in beatae.</p>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem repellendus quos maxime architecto aliquid quibusdam repellat tempora commodi nihil esse dicta enim aspernatur culpa odio, nulla, dolorem neque ipsum optio!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi inventore mollitia nesciunt aut atque ratione distinctio, laborum nihil provident laboriosam voluptatem, in nemo quibusdam quas ut voluptates dolores ad ducimus!</p>
+				</section>
+			</section>
+			<section class="modal03">
+				<section id="content">
+					<h3>Beton</h3>
+					<span id="close03" class="close">&times;</span>
+					<img class="modalimg" id="slim" src="{{ 'assets/images/500x500.png'|theme }}" />
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis commodi corporis, amet nobis laudantium iure architecto laboriosam neque, sequi numquam vel veniam facilis itaque? Sed repudiandae enim vitae in beatae.</p>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem repellendus quos maxime architecto aliquid quibusdam repellat tempora commodi nihil esse dicta enim aspernatur culpa odio, nulla, dolorem neque ipsum optio!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi inventore mollitia nesciunt aut atque ratione distinctio, laborum nihil provident laboriosam voluptatem, in nemo quibusdam quas ut voluptates dolores ad ducimus!</p>
+				</section>
+			</section>
+			
+			<section class="modal04">
+				<section id="content">
+					<h3>Mosaik</h3>
+					<span id="close04" class="close">&times;</span>
+					<img class="modalimg" id="slim" src="{{ 'assets/images/500x500.png'|theme }}" />
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis commodi corporis, amet nobis laudantium iure architecto laboriosam neque, sequi numquam vel veniam facilis itaque? Sed repudiandae enim vitae in beatae.</p>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem repellendus quos maxime architecto aliquid quibusdam repellat tempora commodi nihil esse dicta enim aspernatur culpa odio, nulla, dolorem neque ipsum optio!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi inventore mollitia nesciunt aut atque ratione distinctio, laborum nihil provident laboriosam voluptatem, in nemo quibusdam quas ut voluptates dolores ad ducimus!</p>
+				</section>
+			</section>
+
+			<section class="modal05">
+				<section id="content">
+					<h3>Beton</h3>
+					<span id="close05" class="close">&times;</span>
+					<img class="modalimg" id="slim" src="{{ 'assets/images/500x500.png'|theme }}" />
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis commodi corporis, amet nobis laudantium iure architecto laboriosam neque, sequi numquam vel veniam facilis itaque? Sed repudiandae enim vitae in beatae.</p>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem repellendus quos maxime architecto aliquid quibusdam repellat tempora commodi nihil esse dicta enim aspernatur culpa odio, nulla, dolorem neque ipsum optio!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi inventore mollitia nesciunt aut atque ratione distinctio, laborum nihil provident laboriosam voluptatem, in nemo quibusdam quas ut voluptates dolores ad ducimus!</p>
+				</section>
+			</section>
+
+			<section class="modal06">
+				<section id="content">
+					<h3>Mosaik</h3>
+					<span id="close06" class="close">&times;</span>
+					<img class="modalimg" id="slim" src="{{ 'assets/images/500x500.png'|theme }}" />
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis commodi corporis, amet nobis laudantium iure architecto laboriosam neque, sequi numquam vel veniam facilis itaque? Sed repudiandae enim vitae in beatae.</p>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem repellendus quos maxime architecto aliquid quibusdam repellat tempora commodi nihil esse dicta enim aspernatur culpa odio, nulla, dolorem neque ipsum optio!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi inventore mollitia nesciunt aut atque ratione distinctio, laborum nihil provident laboriosam voluptatem, in nemo quibusdam quas ut voluptates dolores ad ducimus!</p>
+				</section>
+			</section>
+
+			<section class="modal07">
+				<section id="content">
+					<h3>Mosaik</h3>
+					<span id="close07" class="close">&times;</span>
+					<img class="modalimg" id="slim" src="{{ 'assets/images/500x500.png'|theme }}" />
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis commodi corporis, amet nobis laudantium iure architecto laboriosam neque, sequi numquam vel veniam facilis itaque? Sed repudiandae enim vitae in beatae.</p>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem repellendus quos maxime architecto aliquid quibusdam repellat tempora commodi nihil esse dicta enim aspernatur culpa odio, nulla, dolorem neque ipsum optio!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi inventore mollitia nesciunt aut atque ratione distinctio, laborum nihil provident laboriosam voluptatem, in nemo quibusdam quas ut voluptates dolores ad ducimus!</p>
+				</section>
+			</section>
+
+			<section class="modal08">
+				<section id="content">
+					<h3>Nature</h3>
+					<span id="close08" class="close">&times;</span>
+					<img class="modalimg" id="slim" src="{{ 'assets/images/500x500.png'|theme }}" />
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis commodi corporis, amet nobis laudantium iure architecto laboriosam neque, sequi numquam vel veniam facilis itaque? Sed repudiandae enim vitae in beatae.</p>
+					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem repellendus quos maxime architecto aliquid quibusdam repellat tempora commodi nihil esse dicta enim aspernatur culpa odio, nulla, dolorem neque ipsum optio!</p>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi inventore mollitia nesciunt aut atque ratione distinctio, laborum nihil provident laboriosam voluptatem, in nemo quibusdam quas ut voluptates dolores ad ducimus!</p>
+				</section>
+			</section>
+		</main>
+	</div>
 </div>

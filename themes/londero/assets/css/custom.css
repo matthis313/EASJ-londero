@@ -1,29 +1,49 @@
-.header_bg {
-    background-color: red;
-    padding-top: 5rem;
-    padding-bottom: 2rem;
-}
-
-body {
+/**
+* *************************************
+* BASIC
+* *************************************
+*/
+html body {
     padding-top: 0;
     margin-top: 0;
     font-size:1.5rem;
     margin: 0;
+    font-family: Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 h1 {
     font-size: 4rem;
 }
 
-.col-bg {
-    background-color: dimgray;
-    color: white;
-    padding: 7px;
-    text-align: center;
-    margin-top: 2em;
+
+/**
+* *************************************
+* HEADER
+* *************************************
+*/
+.header_bg {
+    background-color: red;
+    padding-top: 5rem;
+    padding-bottom: 2rem;
 }
 
 
+/**
+* *************************************
+* NAV
+* *************************************
+*/
+#layout-nav {
+    margin-bottom: 2rem;
+}
+
+
+/**
+* *************************************
+* INDEX
+* *************************************
+*/
 /* Photo grid */
 #container {
     background: #DDD;
@@ -41,12 +61,56 @@ button {
     font-size: 18px;
 }
 
-/* ************************************* */
-.filter_pic img {
-    width: 50%;
+.col-bg {
+    background-color: dimgray;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1rem;
+}
+
+
+/**
+* *************************************
+* CASES
+* *************************************
+*/
+.cases_img {
+    width: 100%;
     height: auto;
 }
+
+
+/**
+* *************************************
+* PRODUCTS
+* *************************************
+*/
+.prod_pic {
+    width: 100%;
+    height: 25%;
+    margin-bottom: 1rem;
+}
+
 /* Product filtering */
+section {
+    text-align: center;
+}
+
+section .img {
+    display: inline-block;
+    width: 20%;
+    height: auto;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+section .img:hover {
+    cursor: pointer;
+    opacity: .7;
+}
 
 /* Style the buttons */
 .btn {
@@ -64,4 +128,158 @@ button {
 .btn.active {
   background-color: #666;
   color: white;
+}
+
+main section:nth-of-type(2) .img {
+    width: 85%;
+    border: 5px solid white;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+main section:nth-of-type(2) .img:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+main section:nth-of-type(2) .img:last-child {
+    margin-bottom: 0;
+}
+
+.modal01, 
+.modal02, 
+.modal03, 
+.modal04, 
+.modal05, 
+.modal06, 
+.modal07, 
+.modal08 {
+    position: fixed;
+    z-index: 15;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: gainsboro;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+}
+
+#slim {
+    width: 43%;
+    float: right;
+    margin-top: 60px;
+    margin-right: 0;
+}
+
+#content {
+    background-color: #fff;
+    width: 80%;
+    height: 90%;
+	border: 3px solid #650000;
+	margin: 0 auto;
+	margin-top: 3%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+main:first-of-type section p {
+    color: black;
+    text-transform: none;
+    text-align: left;
+    border: none;
+    font-weight: normal;
+    font-size: 12px;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    margin-top: 25px;
+}
+
+#content a {
+    color: #4a927e;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#content a:hover {
+    color: #ffc662;
+}
+
+.close {
+    color: black;
+    float: right;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: -35px;
+}
+
+.close:hover, .close:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 800px) {
+    #slim {
+        width: 30%;
+        float: right;
+        margin-top: 10px;
+        margin-right: 90px;
+        margin-left: 70px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    main section:nth-of-type(2) {
+        padding-left: 50px;
+        padding-right: 0;
+    }
+    
+    main:nth-of-type(2) {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    
+    main:nth-of-type(2) img {
+        width: 40%;
+        margin-right: 40px;
+    }
+    
+    main:nth-of-type(2) p {
+        line-height: 20px;
+    }    
+}
+
+@media screen and (min-width: 500px) {
+    main section:nth-of-type(2) {
+        padding-left: 40px;
+        padding-right: 0;
+    }
+    
+    main section:nth-of-type(2) img {
+        width: 42%;
+        display: inline-block;
+        margin-right: 20px;
+        overflow-x: hidden;
+        vertical-align: text-top;
+        position: static;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    main:first-of-type section p {
+        font-size: 14px;
+    }
+    
+    main:nth-of-type(4) p {
+        font-size: 16px;
+        line-height: 23px;
+    }
 }
