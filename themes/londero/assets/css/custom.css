@@ -199,18 +199,6 @@ main:first-of-type section p {
     margin-top: 25px;
 }
 
-#content a {
-    color: #4a927e;
-    text-transform: uppercase;
-    font-size: 40px;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-#content a:hover {
-    color: #ffc662;
-}
-
 .close {
     color: black;
     float: right;

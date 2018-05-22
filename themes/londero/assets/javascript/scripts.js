@@ -171,11 +171,11 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $("#mosaik_c").click(function(){
+    $("#mosaic_c").click(function(){
         $(".case_01").hide();
         $(".case_02").hide();
     });
-    $("#mosaik").click(function(){
+    $("#mosaic_c").click(function(){
         $(".case_03").show();
     });
 });
@@ -191,7 +191,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $("#close01").click(function(){
+    $("#c_close01").click(function(){
         $(".c_modal01").fadeOut();
     });
 });
@@ -203,7 +203,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $("#close02").click(function(){
+    $("#c_close02").click(function(){
         $(".c_modal02").fadeOut();
     });
 });
@@ -214,7 +214,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $("#close03").click(function(){
+    $("#c_close03").click(function(){
         $(".c_modal03").fadeOut();
     });
 });
@@ -225,7 +225,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $("#close04").click(function(){
+    $("#c_close04").click(function(){
         $(".c_modal04").fadeOut();
     });
 });
