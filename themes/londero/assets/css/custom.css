@@ -23,11 +23,18 @@ h1 {
 * *************************************
 */
 .header_bg {
-    background-color: red;
     padding-top: 5rem;
     padding-bottom: 2rem;
 }
 
+a h1 {
+    text-decoration: none;
+    color: black;
+}
+
+h1 a:hover {
+    text-decoration: none;
+}
 
 /**
 * *************************************
@@ -50,7 +57,7 @@ h1 {
     max-width: 1400px;
 }
 .item {
-    width: 200px;
+    width: 25%;
     float: left;
 }
 .item img {
@@ -214,6 +221,14 @@ main:first-of-type section p {
 }
 
 
+
+
+
+/**
+* *************************************
+* MEDIA QUERIES
+* *************************************
+*/
 @media screen and (min-width: 800px) {
     #slim {
         width: 30%;

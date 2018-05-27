@@ -25,7 +25,6 @@ description = "Default layout"
 
 		<!-- Styles -->
 		<link href="{{ 'assets/css/vendor.css'|theme }}" rel="stylesheet">
-		<link href="{{ 'assets/css/theme.css'|theme }}" rel="stylesheet">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 		<link href="{{ 'assets/css/custom.css'|theme }}" rel="stylesheet">
 		{% styles %}
@@ -44,9 +43,9 @@ description = "Default layout"
 
 
 		<!-- Content -->
-		<section id="layout-content">
+		<div id="layout-content">
 			{% page %}
-		</section>
+		</div>
 
 		<!-- Footer -->
 		<footer id="layout-footer">
@@ -56,8 +55,8 @@ description = "Default layout"
 		<!-- Scripts -->
 		<script src="{{ 'assets/vendor/jquery.js'|theme }}"></script>
 		<script src="{{ 'assets/vendor/bootstrap.js'|theme }}"></script>
-		<script src="{{ 'assets/javascript/app.js'|theme }}"></script>
 		<script src="{{ 'assets/javascript/scripts.js'|theme }}"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAc3DyjrTNZi9OVw37IipKso3EoHT1IZzA&callback=myMap"></script>
 		{% framework extras %}
 		{% scripts %}
 		<!--  START GOOGLE ANALYTICS -->
