@@ -16,6 +16,10 @@ h1 {
     font-size: 4rem;
 }
 
+a:hover {
+    color: white;
+}
+
 
 /**
 * *************************************
@@ -27,13 +31,9 @@ h1 {
     padding-bottom: 2rem;
 }
 
-a h1 {
-    text-decoration: none;
-    color: black;
-}
-
-h1 a:hover {
-    text-decoration: none;
+.logo {
+    width: 15em;
+    height: auto;
 }
 
 /**
@@ -42,7 +42,7 @@ h1 a:hover {
 * *************************************
 */
 #layout-nav {
-    margin-bottom: 2rem;
+    margin-bottom: 4em;
 }
 
 
@@ -56,14 +56,22 @@ h1 a:hover {
     background: #DDD;
     max-width: 1400px;
 }
+
 .item {
-    width: 25%;
+    width: 50%;
     float: left;
 }
+
 .item img {
     display: block;
     width: 100%;
 }
+
+.item:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
 button {
     font-size: 18px;
 }
@@ -73,7 +81,6 @@ button {
     color: white;
     padding: 7px;
     text-align: center;
-    margin-top: 2em;
     margin-bottom: 1rem;
 }
 
@@ -83,9 +90,20 @@ button {
 * CASES
 * *************************************
 */
-.cases_img {
+.c_modal01,
+.c_modal02,
+.c_modal03,
+.c_modal04 {
+    position: fixed;
+    z-index: 15;
+    left: 0;
+    top: 0;
     width: 100%;
-    height: auto;
+    height: 100%;
+    overflow: auto;
+    background-color: gainsboro;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
 }
 
 
@@ -137,6 +155,7 @@ section .img:hover {
   color: white;
 }
 
+/* Product modals */
 main section:nth-of-type(2) .img {
     width: 85%;
     border: 5px solid white;
@@ -174,6 +193,7 @@ main section:nth-of-type(2) .img:last-child {
     display: none;
 }
 
+/* Image inside of modal */
 #slim {
     width: 43%;
     float: right;
@@ -181,6 +201,7 @@ main section:nth-of-type(2) .img:last-child {
     margin-right: 0;
 }
 
+/* The content of the modal */
 #content {
     background-color: #fff;
     width: 80%;
@@ -194,6 +215,7 @@ main section:nth-of-type(2) .img:last-child {
 	padding-left: 10px;
 }
 
+/* The style of the p section in the modal */
 main:first-of-type section p {
     color: black;
     text-transform: none;
@@ -206,6 +228,7 @@ main:first-of-type section p {
     margin-top: 25px;
 }
 
+/* Close button */
 .close {
     color: black;
     float: right;
@@ -221,7 +244,19 @@ main:first-of-type section p {
 }
 
 
+/**
+* *************************************
+* SUPPLIERS
+* *************************************
+*/
+.suppliers {
+    text-align: center;
+}
 
+.suppliers img {
+    width: 75%;
+    height: auto;
+}
 
 
 /**
@@ -236,6 +271,11 @@ main:first-of-type section p {
         margin-top: 10px;
         margin-right: 90px;
         margin-left: 70px;
+    }
+
+    .item {
+        width: 25%;
+        float: left;
     }
 }
 
