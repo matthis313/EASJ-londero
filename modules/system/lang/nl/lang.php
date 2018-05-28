@@ -40,8 +40,7 @@ return [
         'tr' => 'Türkçe',
         'uk' => 'Українська мова',
         'zh-cn' => '简体中文',
-        'zh-tw' => '繁體中文',
-        'vn' => 'Tiếng việt'
+        'zh-tw' => '繁體中文'
     ],
     'directory' => [
         'create_fail' => 'Map aanmaken mislukt: :name',

@@ -21,16 +21,12 @@ class MediaLibrary
 {
     use \October\Rain\Support\Traits\Singleton;
 
+    const CACHE_KEY = 'system-media-library-contents';
     const SORT_BY_TITLE = 'title';
     const SORT_BY_SIZE = 'size';
     const SORT_BY_MODIFIED = 'modified';
     const SORT_DIRECTION_ASC = 'asc';
     const SORT_DIRECTION_DESC = 'desc';
-
-    /**
-     * @var string Cache key
-     */
-    protected $cacheKey = 'system-media-library-contents';
 
     /**
      * @var string Relative or absolute URL of the Library root folder.
@@ -84,26 +80,6 @@ class MediaLibrary
     }
 
     /**
-     * Set the cache key
-     *
-     * @param string $cacheKey The key to set as the cache key for this instance
-     */
-    public function setCacheKey($cacheKey)
-    {
-        $this->cacheKey = $cacheKey;
-    }
-
-    /**
-     * Get the cache key
-     *
-     * @return string The cache key to set as the cache key for this instance
-     */
-    public function getCacheKey()
-    {
-        return $this->cacheKey;
-    }
-
-    /**
      * Returns a list of folders and files in a Library folder.
      *
      * @param string $folder Specifies the folder path relative the the Library root.
@@ -123,7 +99,7 @@ class MediaLibrary
          * Try to load the contents from cache
          */
 
-        $cached = Cache::get($this->cacheKey, false);
+        $cached = Cache::get(self::CACHE_KEY, false);
         $cached = $cached ? @unserialize(@base64_decode($cached)) : [];
 
         if (!is_array($cached)) {
@@ -138,7 +114,7 @@ class MediaLibrary
 
             $cached[$fullFolderPath] = $folderContents;
             Cache::put(
-                $this->cacheKey,
+                self::CACHE_KEY,
                 base64_encode(serialize($cached)),
                 Config::get('cms.storage.media.ttl', 10)
             );
@@ -453,7 +429,7 @@ class MediaLibrary
      */
     public function resetCache()
     {
-        Cache::forget($this->cacheKey);
+        Cache::forget(self::CACHE_KEY);
     }
 
     /**

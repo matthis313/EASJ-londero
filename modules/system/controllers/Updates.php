@@ -511,11 +511,7 @@ class Updates extends Controller
             $pluginActions = (array) post('plugin_actions');
             foreach ($plugins as $code => $hash) {
                 $_code = $this->encodeCode($code);
-
-                if (!array_key_exists($_code, $pluginActions)) {
-                    continue;
-                }
-
+                if (!array_key_exists($_code, $pluginActions)) continue;
                 $pluginAction = $pluginActions[$_code];
 
                 if (!$pluginAction) {
