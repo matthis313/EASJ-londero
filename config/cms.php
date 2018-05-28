@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'activeTheme' => 'londero',
+    'activeTheme' => 'demo',
 
     /*
     |--------------------------------------------------------------------------
@@ -116,7 +116,7 @@ return [
     |
     */
 
-    'disableCoreUpdates' => true,
+    'disableCoreUpdates' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -209,7 +209,7 @@ return [
     |
     */
 
-    'enableAssetDeepHashing' => true,
+    'enableAssetDeepHashing' => null,
 
     /*
     |--------------------------------------------------------------------------
@@ -307,7 +307,7 @@ return [
     |
     */
 
-    'defaultMask' => ['file' => null, 'folder' => null],
+    'defaultMask' => ['file' => '777', 'folder' => '777'],
 
     /*
     |--------------------------------------------------------------------------

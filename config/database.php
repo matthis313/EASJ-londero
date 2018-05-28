@@ -54,11 +54,11 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => 'localhost',
-            'port'      => '3306',
-            'database'  => 'londero',
+            'host'      => 'londero.test',
+            'port'      => 3306,
+            'database'  => 'database',
             'username'  => 'root',
-            'password'  => '',
+            'password'  => 'admin',
             'charset'   => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix'    => '',
@@ -66,11 +66,11 @@ return [
 
         'pgsql' => [
             'driver'   => 'pgsql',
-            'host'     => 'localhost',
+            'host'     => 'londer.test',
             'port'     => 5432,
             'database' => 'database',
             'username' => 'root',
-            'password' => '',
+            'password' => 'admin',
             'charset'  => 'utf8',
             'prefix'   => '',
             'schema'   => 'public',

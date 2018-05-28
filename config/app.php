@@ -28,7 +28,7 @@ return [
     | any other location as required by the application or its packages.
     */
 
-    'name' => 'Londero',
+    'name' => 'October CMS',
 
     /*
     |--------------------------------------------------------------------------
@@ -41,7 +41,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost',
+    'url' => 'londer.test',
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'key' => 'Eq7lJC9Dl8P3ZaIyzIzbmWvrYGORxVXv',
+    'key' => '6GIL0n9ULtC4tZYQQ1b8CK7LDCGijbrf',
 
     'cipher' => 'AES-256-CBC',
 
