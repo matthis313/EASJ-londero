@@ -87,29 +87,7 @@ button {
 
 /**
 * *************************************
-* CASES
-* *************************************
-*/
-.c_modal01,
-.c_modal02,
-.c_modal03,
-.c_modal04 {
-    position: fixed;
-    z-index: 15;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: gainsboro;
-    background-color: rgba(0,0,0,0.4);
-    display: none;
-}
-
-
-/**
-* *************************************
-* PRODUCTS
+* CASES AND PRODUCTS
 * *************************************
 */
 .prod_pic {
@@ -150,11 +128,6 @@ section .img:hover {
   background-color: #ddd;
 }
 
-.btn.active {
-  background-color: #666;
-  color: white;
-}
-
 /* Product modals */
 main section:nth-of-type(2) .img {
     width: 85%;
@@ -193,7 +166,7 @@ main section:nth-of-type(2) .img:last-child {
     display: none;
 }
 
-/* Image inside of modal */
+/* Image inside of product modal */
 #slim {
     width: 43%;
     float: right;
@@ -201,7 +174,7 @@ main section:nth-of-type(2) .img:last-child {
     margin-right: 0;
 }
 
-/* The content of the modal */
+/* The content of the products modal */
 #content {
     background-color: #fff;
     width: 80%;
@@ -246,6 +219,29 @@ main:first-of-type section p {
 
 /**
 * *************************************
+* CONTACT
+* *************************************
+*/
+.team {
+    text-align: center;
+}
+
+.team h3, p {
+    text-align: left;
+}
+
+.thumbnail {
+    width: 75%;
+    margin-left: 3em;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+
+/**
+* *************************************
 * SUPPLIERS
 * *************************************
 */
@@ -256,6 +252,20 @@ main:first-of-type section p {
 .suppliers img {
     width: 75%;
     height: auto;
+}
+
+
+/**
+* *************************************
+* FOOTER
+* *************************************
+*/
+footer a {
+    color: black;
+}
+
+footer a:hover {
+    color: #666;
 }
 
 
@@ -276,6 +286,11 @@ main:first-of-type section p {
     .item {
         width: 25%;
         float: left;
+    }
+
+    .thumbnail {
+        width: 100%;
+        margin-left: 0em;
     }
 }
 

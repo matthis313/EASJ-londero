@@ -1,5 +1,5 @@
 // **************************
-// FILTERING PRODUCTS
+// FILTERING PRODUCTS AND CASES
 // **************************
 $(document).ready(function(){
 	$("#all").click(function(){
@@ -40,7 +40,7 @@ $(document).ready(function(){
 });
 
 // **************************
-// PRODUCT MODALS
+// PRODUCT MODALS AND CASES
 // **************************
 $(document).ready(function(){
 	$("#01").click(function(){
@@ -135,97 +135,5 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("#close08").click(function(){
 		$(".modal08").fadeOut();
-	});
-});
-
-
-// **************************
-// FILTERING CASES
-// **************************
-$(document).ready(function(){
-	$("#all_c").click(function(){
-		$(".case_01").show();
-		$(".case_02").show();
-		$(".case_03").show();
-	});
-});
-
-$(document).ready(function(){
-	$("#nature_c").click(function(){
-		$(".case_02").hide();
-		$(".case_03").hide();
-	});
-	$("#nature_c").click(function(){
-		$(".case_01").show();
-	});
-});
-
-$(document).ready(function(){
-	$("#beton_c").click(function(){
-		$(".case_01").hide();
-		$(".case_03").hide();
-	});
-	$("#beton_c").click(function(){
-		$(".case_02").show();
-	});
-});
-
-$(document).ready(function(){
-	$("#mosaic_c").click(function(){
-		$(".case_01").hide();
-		$(".case_02").hide();
-	});
-	$("#mosaic_c").click(function(){
-		$(".case_03").show();
-	});
-});
-
-
-// **************************
-// CASE MODALS
-// **************************
-$(document).ready(function(){
-	$("#C_01").click(function(){
-		$(".c_modal01").fadeIn();
-	});
-});
-
-$(document).ready(function(){
-	$("#c_close01").click(function(){
-		$(".c_modal01").fadeOut();
-	});
-});
-
-$(document).ready(function(){
-	$("#C_02").click(function(){
-		$(".c_modal02").fadeIn();
-	});
-});
-
-$(document).ready(function(){
-	$("#c_close02").click(function(){
-		$(".c_modal02").fadeOut();
-	});
-});
-$(document).ready(function(){
-	$("#C_03").click(function(){
-		$(".c_modal03").fadeIn();
-	});
-});
-
-$(document).ready(function(){
-	$("#c_close03").click(function(){
-		$(".c_modal03").fadeOut();
-	});
-});
-$(document).ready(function(){
-	$("#C_04").click(function(){
-		$(".c_modal04").fadeIn();
-	});
-});
-
-$(document).ready(function(){
-	$("#c_close04").click(function(){
-		$(".c_modal04").fadeOut();
 	});
 });
