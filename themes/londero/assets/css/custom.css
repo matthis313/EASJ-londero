@@ -9,7 +9,6 @@ html body {
     font-size:1.5rem;
     margin: 0;
     font-family: Helvetica, sans-serif;
-    overflow-x: hidden;
 }
 
 h1 {
@@ -92,7 +91,7 @@ button {
 */
 .prod_pic {
     width: 100%;
-    height: 25%;
+    height: 33%;
     margin-bottom: 1rem;
 }
 
@@ -125,7 +124,7 @@ section .img:hover {
 }
 
 .btn:hover {
-  background-color: #ddd;
+  background-color: gainsboro;
 }
 
 /* Product modals */
@@ -262,10 +261,20 @@ main:first-of-type section p {
 */
 footer a {
     color: black;
+    
 }
 
 footer a:hover {
     color: #666;
+}
+
+.fa-2x {
+    font-size: 7em;
+    padding-right: 1rem;
+}
+
+footer {
+    text-align: center;
 }
 
 
@@ -291,6 +300,14 @@ footer a:hover {
     .thumbnail {
         width: 100%;
         margin-left: 0em;
+    }
+
+    .fa-2x {
+        font-size: 2em;
+    }
+
+    footer {
+        text-align: left;
     }
 }
 

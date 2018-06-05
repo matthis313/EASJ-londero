@@ -1,3 +1,5 @@
+$('.collapse').collapse()
+
 // **************************
 // FILTERING PRODUCTS AND CASES
 // **************************
