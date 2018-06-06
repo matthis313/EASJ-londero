@@ -1,5 +1,3 @@
-$('.collapse').collapse()
-
 // **************************
 // FILTERING PRODUCTS AND CASES
 // **************************
@@ -137,5 +135,89 @@ $(document).ready(function(){
 $(document).ready(function(){
 	$("#close08").click(function(){
 		$(".modal08").fadeOut();
+	});
+});
+
+$(document).ready(function(){
+	$("#09").click(function(){
+		$(".modal09").fadeIn();
+	});
+});
+
+$(document).ready(function(){
+	$("#close09").click(function(){
+		$(".modal09").fadeOut();
+	});
+});
+
+$(document).ready(function(){
+	$("#10").click(function(){
+		$(".modal10").fadeIn();
+	});
+});
+
+$(document).ready(function(){
+	$("#close10").click(function(){
+		$(".modal10").fadeOut();
+	});
+});
+
+$(document).ready(function(){
+	$("#11").click(function(){
+		$(".modal11").fadeIn();
+	});
+});
+
+$(document).ready(function(){
+	$("#close11").click(function(){
+		$(".modal11").fadeOut();
+	});
+});
+
+$(document).ready(function(){
+	$("#12").click(function(){
+		$(".modal12").fadeIn();
+	});
+});
+
+$(document).ready(function(){
+	$("#close12").click(function(){
+		$(".modal12").fadeOut();
+	});
+});
+
+$(document).ready(function(){
+	$("#13").click(function(){
+		$(".modal13").fadeIn();
+	});
+});
+
+$(document).ready(function(){
+	$("#close13").click(function(){
+		$(".modal13").fadeOut();
+	});
+});
+
+$(document).ready(function(){
+	$("#14").click(function(){
+		$(".modal14").fadeIn();
+	});
+});
+
+$(document).ready(function(){
+	$("#close14").click(function(){
+		$(".modal14").fadeOut();
+	});
+});
+
+$(document).ready(function(){
+	$("#15").click(function(){
+		$(".modal15").fadeIn();
+	});
+});
+
+$(document).ready(function(){
+	$("#close15").click(function(){
+		$(".modal15").fadeOut();
 	});
 });

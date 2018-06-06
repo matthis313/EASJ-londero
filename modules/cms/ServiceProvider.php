@@ -15,7 +15,6 @@ use Cms\Classes\Page as CmsPage;
 use Cms\Classes\CmsObject;
 use Cms\Models\ThemeData;
 use Cms\Models\ThemeLog;
-use Illuminate\Support\Facades\Schema;
 
 class ServiceProvider extends ModuleServiceProvider
 {
@@ -55,7 +54,6 @@ class ServiceProvider extends ModuleServiceProvider
 
         $this->bootMenuItemEvents();
         $this->bootRichEditorEvents();
-        Schema::defaultStringLength(191);
     }
 
     /**
