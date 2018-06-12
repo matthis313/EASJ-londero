@@ -15,6 +15,10 @@ h1 {
     font-size: 4rem;
 }
 
+.team p {
+    text-align: initial;
+}
+
 a:hover {
     color: white;
 }
@@ -125,11 +129,9 @@ section {
 
 section .img {
     display: inline-block;
-    width: 20%;
+    width: 45%;
     height: auto;
-    margin-bottom: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin: .3em;
 }
 
 section .img:hover {
@@ -361,6 +363,17 @@ footer {
     #images .item {
         margin: .1em;
         width: 24.7%;
+    }
+
+    section .img {
+        display: inline-block;
+        width: 20%;
+        height: auto;
+        margin: 1rem;
+    }
+
+    .team p {
+        text-align: justify;
     }
 }
 
